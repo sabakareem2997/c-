@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include<iostream>
+using namespace std;
+void foo(int &a,int &b)
+{
+    a=2997;
+    b=2998;
+    
+}
+
+int main()
+{
+    
+int a,b;
+printf("enter a b vlaues\n");
+scanf("%d%d",&a,&b);
+foo(a,b);
+cout<<a<<ends<<b;
+}
