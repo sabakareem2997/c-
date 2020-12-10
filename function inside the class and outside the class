@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include<iostream>
+using namespace std;
+
+class stu 
+{
+    int a,b;
+    char str[100];
+    public:
+        void get_data(void)
+        {
+            cout<<"enter the student name"<<endl;
+            cin>>str;
+            cout<<"enter the sub1 marks "<<endl;
+            cin>>a;
+            cout<<"enter the sub2 marks"<<endl;
+            cin>>b;
+        }
+  void read_data(void);  
+};
+void stu::read_data(void)
+{
+    cout<<"entered data "<<endl;
+    cout<<"student name :-" <<str<<endl<<" sub 1 marks:- "<<a<<" sub 2 marks:- "<<b<<endl;
+    
+    
+    
+}
+
+int main()
+{
+ stu t;
+ t.get_data();
+ t.read_data();
+    
+}
