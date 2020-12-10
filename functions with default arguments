@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include<iostream>
+using namespace std;
+void foo(int a=30,int b=80,int c=10);
+void foo(int a,int b,int c)
+{
+    
+    cout<<a<<"=a"<<b<<"=b"<<ends<<c<<"=c" <<endl;
+}
+
+int main()
+{
+    
+int a,b;
+printf("enter a b vlaues\n");
+scanf("%d%d",&a,&b);
+foo(a,b);
+foo(a);
+
+}
