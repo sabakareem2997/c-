@@ -1,0 +1,34 @@
+#include <stdio.h>
+#include<iostream>
+using namespace std;
+
+class tu 
+{
+    int a;
+public:
+void data()
+{
+    cout<<"enter a value";
+    cin>>a;
+    
+}
+char *big(tu t)
+{
+    if(t.a>a)
+    return "second  object data is big";
+    else
+    return "first obj data is big";
+    
+}
+};
+
+int main()
+{
+    
+    tu g,k;
+    g.data();
+    k.data();
+    char *ptr;
+    ptr=g.big(k);
+    printf("%s",ptr);
+}
