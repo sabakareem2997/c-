@@ -1,0 +1,20 @@
+#include <iostream>
+
+using namespace std;
+
+struct stu 
+{
+    int arm;
+    void kam()
+    {
+        printf("wilsom %d",arm);
+    }
+    
+};
+int main()
+{
+    stu k;
+    k.arm=10;
+    k.kam();
+    return 0;
+}
