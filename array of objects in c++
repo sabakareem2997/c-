@@ -1,0 +1,44 @@
+
+#include <stdio.h>
+#include<iostream>
+using namespace std;
+
+class kareem
+{
+    
+    int a,b;
+    public:
+    void get_data()
+    {
+        cout<<"enter a b values  "<<endl;
+        cin>>a>>b;
+    }
+    void print()
+    {
+        cout<<" entered data is "<<endl;
+        cout<<a<<" "<<b<<endl;
+        
+    }
+};
+
+
+
+
+int main()
+{
+    kareem stu[4];
+    int i;
+    for(i=0;i<4;++i)
+    {
+    stu[i].get_data();
+    
+    }
+      for(i=0;i<4;++i)
+    {
+        cout<<"printing ddata "<<i<<endl;
+    stu[i].print();
+    
+    }
+    
+    
+}
