@@ -1,0 +1,54 @@
+#include<iostream>
+using namespace std;
+
+class ptu ;
+class stu 
+{
+ int a;
+ public:
+ void get_data();
+ //friend void put_data();
+friend void put_data(stu j,ptu o);
+};
+
+void stu::get_data()
+{
+    cout<<"enter data\n";
+    cin>>a;
+}
+
+
+class ptu
+{
+    int b;
+    public:
+    void get_data()
+    {
+        
+        cout<<"enter the data";
+        cin>>b;
+    }
+friend void put_data(stu j,ptu o);
+    
+};
+
+
+void put_data(stu j,ptu o)
+{
+    if(j.a>o.b)
+    printf("a is big %d",j.a);
+    else
+    printf("b is big %d",o.b);
+    
+}
+
+
+int main()
+{
+    
+stu s;
+s.get_data();
+ptu l;
+l.get_data();
+put_data(s,l);
+}
