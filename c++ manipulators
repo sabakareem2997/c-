@@ -1,0 +1,24 @@
+
+
+#include <iostream>
+#include<iomanip>
+using namespace std;
+
+
+int main()
+{
+    
+    cout<<"saba"<<ends<<"kareem"<<endl;
+    cout<<setw(5)<<"kareem"<<endl;
+    cout<<setw(8)<<"2997"<<endl;
+    cout<<setfill('*');
+      cout<<setw(5)<<"kareem"<<endl;
+    cout<<setw(8)<<"2997"<<endl;
+    cout<<setfill(' ');
+    cout<<setprecision(2)<<22/7.0<<endl;
+    cout<<setbase(16)<<64;
+    cout<<setw(10)<<setiosflags(ios::left)<<"rama"<<"krishna";
+    
+    
+}
+
