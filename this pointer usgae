@@ -13,6 +13,11 @@ using namespace std;
 class saba
 {
     int a,b;
+    void print()
+    {
+    cout<<"a "<<a<<"b  "<<b<<endl;
+    
+    }
     public:
 void get_data(int a,int b);    
 void put_data()
@@ -26,7 +31,7 @@ void saba::get_data(int a,int b)
 {
     this->a=a;
     this->b=b;
-    cout<<" a  "<<a<<ends<<" b ="<<b<<ends;
+    print();
     
     
 }
