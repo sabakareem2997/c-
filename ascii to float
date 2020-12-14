@@ -1,0 +1,58 @@
+/******************************************************************************
+
+                            Online C Compiler.
+                Code, Compile, Run and Debug C program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
+#include <stdio.h>
+#include<string.h>
+#include<ctype.h>
+void atofe(char *s)
+{
+    int i=0,l;
+    l=strlen(s);
+    l--;
+
+    double sum1=0,sum=0,kin=0,kin1=0;
+    for(i=0;((s[i]!='.')&&(s[i]!=NULL));++i)
+    {
+      //  sum1=10.0*sum1+sum;
+        sum=s[i]-'0';
+               sum1=10.0*sum1+sum;
+    }
+    //sum1=10.0*sum1+sum;
+    printf("%f\n",sum1);
+    int j;
+    char c;
+    ++i;
+    for(j=i;j<l;++j)
+    {
+        c=s[j];
+        s[j]=s[l];
+        s[l]=c;
+        --l;
+        
+    }
+    for(;((s[i]!='.')&&(s[i]!=NULL));++i)
+    {
+    
+        kin=s[i]-'0';
+     kin1=0.1*kin1+kin*0.1;
+    }
+    printf("%f\n",kin1);
+   printf("%lf\n",kin1+sum1);
+}
+
+
+int main()
+{
+    float k;
+    char s[100];
+    scanf("%s",s);
+   atofe(s);
+   //atoe(s);
+
+    return 0;
+}
