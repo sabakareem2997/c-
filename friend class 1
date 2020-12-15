@@ -1,0 +1,52 @@
+/******************************************************************************
+
+                            Online C Compiler.
+                Code, Compile, Run and Debug C program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+#include <stdio.h>
+#include<iostream>
+using namespace std;
+class test 
+{
+    int a,b;
+    friend class test1;
+    public:
+        void getdata()
+        {
+            cin>>a>>b;
+        }
+       void data();
+};
+
+
+void test::data()
+{
+    
+    printf("%d%d",a,b);
+}
+
+class test1
+{
+    public:
+        void put_data(test &t1)
+        {
+                cout<<t1.a<<t1.b;
+                t1.a=10;
+                t1.b=20;
+                
+            }
+    
+};
+
+int main()
+{
+    printf("Hello World");
+test k;
+test1 t;
+k.getdata();
+t.put_data(k);
+k.data();
+    return 0;
+}
